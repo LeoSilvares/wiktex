@@ -1,0 +1,75 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	overflow: hidden;
+	text-align: center;
+}
+
+#div_login
+{
+	display: inline-block;
+	margin-top: 200;
+	width: 464px;
+	padding: 32px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid rgb(233,227,222);
+	border-radius: 5px;
+}
+.erro
+{
+	color: red;
+}
+.login_linha
+{
+	display: inline-block;
+	width: 400px;
+	margin-bottom: 16px;
+}
+.label
+{
+	display: inline-block;
+	float: left;
+	width: 100px;
+}
+.field
+{
+	display: inline-block;
+	float: right;
+	width: 300px;
+	text-align: right;
+}
+.input
+{
+	width: 300px;
+}
+.botao
+{
+	cursor: pointer;
+	margin-top: 8px;
+	display: inline-block;
+    margin-left: 8px;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	width: 128px;
+	border-radius: 12px;
+	color: white;
+	background-color: rgb(63,72,204);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	outline:none;
+	border: none;
+}
+.botao:hover
+{
+	filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+  -moz-filter: brightness(120%);
+  -o-filter: brightness(120%);
+  -ms-filter: brightness(120%);
+}
+.titulo
+{
+	font-size: 32px;
+}

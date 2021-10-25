@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	overflow: auto;
+	text-align: center;
+}
+
+#main
+{
+	display: inline-block;
+	margin-top: 16px;
+	width: 90%;
+	padding: 32px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: 1px solid rgb(233,227,222);
+	border-radius: 5px;
+	align: left;
+	max-width: 700px;
+}
+
+.movendo
+{
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+	height: 8px;
+	border: 1px dotted rgb(255,71,92);
+}
+.movendo:hover
+{
+	background-color: rgb(255,71,92);
+}
+.place
+{
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+	height: 8px;
+}
+
+.topico
+{
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: auto;
+	
+	display: block;
+	height: 16px;
+	vertical-align: middle;
+	line-height: 16px;
+	padding: 2px;
+}
+.topico:hover
+{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+	border: 1px solid rgb(233,227,222);
+}
+.movendo_atual
+{
+	border: 1px dotted rgb(92,71,255);
+}
+.adicionada_agora
+{
+	border: 1px dotted rgb(92,71,255);
+}
+.escondido
+{
+	color: rgb(233,227,222);
+}
+.capitulo
+{
+}
+.pagina
+{
+	margin-left: 32px;	
+}
+.titulo
+{
+	display: inline-block;
+	float: left;
+}
+.opcoes
+{
+	display: inline-block;
+	float: right;
+	height: 16px;
+}
+.opcao
+{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin-left: 8px;
+}
+.mostrar
+{
+	background-image: url("../img/opcao_mostrar.png");
+}
+.esconder
+{
+	background-image: url("../img/opcao_esconder.png");
+}
+.renomear
+{
+	background-image: url("../img/opcao_editar.png");
+}
+.mover
+{
+	background-image: url("../img/opcao_mover.png");
+}
+.ver
+{
+	background-image: url("../img/opcao_ver.png");
+}
+.excluir
+{
+	background-image: url("../img/opcao_excluir.png");
+}
+#barra
+{
+	display: inline-block;
+    width: 100%;
+	height: 36px;
+	vertical-align: middle;
+	line-height: 36px;
+}
+#erro
+{
+	display: inline-block;
+    width: 100%;
+	height: 24px;
+	vertical-align: middle;
+	line-height: 24px;
+	color: red;
+}
+
+div.barra_btn
+{
+	cursor: pointer;
+	margin-top: 8px;
+	float: right;
+	display: inline-block;
+    margin-left: 8px;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+	width: 128px;
+	border-radius: 12px;
+	color: white;
+	background-color: rgb(63,72,204);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.barra_btn:hover
+{
+	filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+  -moz-filter: brightness(120%);
+  -o-filter: brightness(120%);
+  -ms-filter: brightness(120%);
+}
+.div_renomear
+{
+	margin-left: 0px;
+	float: left;
+}
+

@@ -1,0 +1,26 @@
+div.toc_page
+{
+	position: relative; 
+	display: inline-block;
+	width: 400px;
+	height: 50px;
+	background-image: url('../media/Elementos/fundo_pag_g.png');
+	border-radius: 5px;
+	margin: 5px;
+	color: white;
+}
+div.toc_page > div 
+{
+	position: absolute; 
+	bottom: 2px; 
+	left: 2px; 
+	font-size: 16px;
+	font-weight: bold;
+	color: white;	
+}
+div.toc_page > div > a
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;	
+}
