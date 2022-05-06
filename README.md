@@ -4,6 +4,10 @@ A subset of LaTeX commands can be used, in addition to new commands for insertin
 
 Ace (https://ace.c9.io/) is used for LaTeX code edition.
 
+WikTex doesn't use a database, everything is done with file management, as in other wiki projects. All you need is ~~love~~ a php environment with write permission to files.
+
+This is a very early version of the project. If you want to use it and/or contribute, let me know (this will save you a lot of time!).
+
 # About me
 
 My name is Leonardo Silvares and I'm professor of Mathematics at Universidade Federal Fluminense, in Niterói, Rio de Janeiro, Brazil. In addition to teaching, I have some strange form of fun working in math related programming projects, like WikTex and 3Graf (www.3graf.com). My endorphin shots comes from street running (half marathon).
