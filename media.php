@@ -4,11 +4,7 @@ include("arquivo.php");
 include("comum.php");
 include("sessao.php");
 
-if (!Editor())
-{
-	header('Location: index.php');
-	exit();
-}
+SoPermitirSeEditor();
 
 $dir_atual = "";
 if (isset($_GET['d']))

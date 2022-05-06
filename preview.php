@@ -2,6 +2,9 @@
 
 include('compilar.php');
 include('arquivo.php');
+include("sessao.php");
+
+SoPermitirSeEditor();
 
 $pg = "";
 if (isset($_GET['pg']))

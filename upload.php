@@ -3,12 +3,7 @@
 include('arquivo.php');
 include('sessao.php');
 
-if (!Editor())
-{
-	header('Location: media.php');
-	exit();
-}
-
+SoPermitirSeEditor();
 
 if (!isset($_POST['dir_atual']))
 	Sair("Diretório inválido");

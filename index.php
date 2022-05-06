@@ -138,6 +138,9 @@ else
 	else if ($perfil == 'e')
 		echo $nome . "<a href='sair.php' class='logado'>Sair</a>";
 }	
+
+echo "&nbsp;&nbsp;<a href=\"https://github.com/LeoSilvares/wiktex\" class='poweredby'>Powered by Wikitex</a>";
+
 echo "</div>";
 
 ?>

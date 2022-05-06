@@ -60,5 +60,13 @@ function Deslogar()
 	session_destroy();
 }
 
+function SoPermitirSeEditor()
+{
+	if (!Editor())
+	{
+		header('Location: index.php');
+		exit;
+	}
+}
 
 ?>

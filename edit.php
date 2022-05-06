@@ -2,7 +2,9 @@
 
 include("arquivo.php");
 include("comum.php");
+include("sessao.php");
 
+SoPermitirSeEditor();
 
 $pg = "1";
 if (isset($_GET['pg']))

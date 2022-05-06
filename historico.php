@@ -5,12 +5,7 @@ include("configuracao.php");
 include("arquivo.php");
 include("site/config.php");
 
-
-if (!Editor())
-{
-	header('Location: index.php');
-	exit();
-}
+SoPermitirSeEditor();
 
 $pg = '';
 
