@@ -528,7 +528,7 @@ function IniciarAmbientesLatexPadrao(& $ambientes)
 	array_push($ambientes, new html());
 	array_push($ambientes, new comment());
 	
-	array_push($ambientes, new Ambiente("equation", 0, Ambiente::$TEM_QUEBRA_DE_LINHAS | Ambiente::$ANCORA_EM_MODO_DE_EQUACAO | Ambiente::$NAO_TEM_PARAGRAFOS));
+	array_push($ambientes, new Ambiente("equation", 0, Ambiente::$TEM_QUEBRA_DE_LINHAS | Ambiente::$ANCORA_EM_MODO_DE_EQUACAO | Ambiente::$NAO_TEM_PARAGRAFOS | Ambiente::$MODO_MATEMATICO));
 	array_push($ambientes, new Ambiente("eqnarray", 0, Ambiente::$TEM_QUEBRA_DE_LINHAS | Ambiente::$ANCORA_EM_MODO_DE_EQUACAO | Ambiente::$NAO_TEM_PARAGRAFOS));
 	array_push($ambientes, new Ambiente("eqnarray*", 0, Ambiente::$TEM_QUEBRA_DE_LINHAS | Ambiente::$ANCORA_EM_MODO_DE_EQUACAO | Ambiente::$NAO_TEM_PARAGRAFOS));
 	array_push($ambientes, new Ambiente("array", 0, Ambiente::$TEM_QUEBRA_DE_LINHAS | Ambiente::$ANCORA_EM_MODO_DE_EQUACAO | Ambiente::$NAO_TEM_PARAGRAFOS));
@@ -536,6 +536,7 @@ function IniciarAmbientesLatexPadrao(& $ambientes)
 	array_push($ambientes, new multicols());
 	array_push($ambientes, new minipage());
 	
+	array_push($ambientes, new Div("figure", "div_center"));
 	array_push($ambientes, new Div("center", "div_center"));
 	array_push($ambientes, new Div("box", "div_round div_box"));
 	array_push($ambientes, new Div("tip", "div_round div_box div_tip"));
@@ -543,13 +544,16 @@ function IniciarAmbientesLatexPadrao(& $ambientes)
 	array_push($ambientes, new Div("alert", "div_round div_box div_alert"));
 	array_push($ambientes, new Div("important", "div_round div_box div_important"));
 	array_push($ambientes, new Div("info", "div_round div_box div_info"));
+	array_push($ambientes, new Div("scratch", "div_round div_box div_scratch"));
 	
 	array_push($ambientes, new Teorema("activity", "Atividade", "", "example", "example_title"));
 	array_push($ambientes, new Teorema("example", "Exemplo", "", "example", "example_title"));
+	array_push($ambientes, new Teorema("exercise", "Exercício", "", "exercise", "exercise_title"));
 	array_push($ambientes, new Teorema("theorem", "Teorema", "", "theorem", "theorem_title"));
 	array_push($ambientes, new Teorema("proposition", "Proposição", "", "proposition", "proposition_title"));
 	array_push($ambientes, new Teorema("definition", "Definição", "", "definition", "definition_title"));
 	array_push($ambientes, new ExpTeorema("solution", "Solução", "", "solution", "solution_title", Teorema::$SEM_NUMERO));
+	array_push($ambientes, new ExpTeorema("proof", "Demonstração", "", "proof", "proof_title", Teorema::$SEM_NUMERO));
 }
 
 

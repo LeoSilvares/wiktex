@@ -279,6 +279,7 @@ class Processor
 		else
 		{
 			$this->Saida("  '$tipo' desconhecido");
+			$modo_matematico = $this->modo_matematico;
 		}
 		
 		$args = NULL;
@@ -486,15 +487,18 @@ class Processor
 				
 				$texto = $this->FazerEnv($fechar_paragrafo);
 				
-				if ($fechar_paragrafo && $tem_paragrafo_aberto)
+				if (!$this->modo_matematico)
 				{
-					$saida .= "</p>";	
-					$tem_paragrafo_aberto = false;
-				}
-				else if (!$fechar_paragrafo && !$tem_paragrafo_aberto)
-				{
-					$saida .= "<p>";	
-					$tem_paragrafo_aberto = true;
+					if ($fechar_paragrafo && $tem_paragrafo_aberto)
+					{
+						$saida .= "</p>";	
+						$tem_paragrafo_aberto = false;
+					}
+					else if (!$fechar_paragrafo && !$tem_paragrafo_aberto)
+					{
+						$saida .= "<p>";	
+						$tem_paragrafo_aberto = true;
+					}
 				}
 				
 				$saida .= $texto; 
