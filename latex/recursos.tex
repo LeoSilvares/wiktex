@@ -1,0 +1,37 @@
+%meta-autor LeoSilvares
+%meta-versao 1
+%meta-data 02/Aug/2021 13:10:06
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\subsection{Recursos multimída}
+
+\begin{itemize}
+    \item \comop{includegraphics}{argumentos opcionais}{imagem}: insere uma imagem do repositório de mídia, que pode ser acessado no botão "Mídia" da página de edição. Os argumentos opcionais devem ser na forma 
+    \begin{center}
+        \texttt{[Opção1=valor, ..., OpçãoN=valor]}
+    \end{center}
+    onde, cada OpçãoX corresponde a um campo de estilo CSS ho html (exemplos: width [largura], height [altura])
+    \item \compp{youtube}{id do vídeo}{texto explicativo}: Insere uma caixa com texto explicativo que, quando clicada, abre um vídeo do YouTube. O id do vídeo são as letras/números que aparecem no final do link do vídeo. Exemplo de vídeo:
+    \youtube{JJ-Y65hFIrA}{Assista ao vídeo "Expressões do Primeiro Grau", que cobre parte do conteúdo desta página}
+    criado com o comando
+    \begin{center}
+        \texttt{\com{youtube}\{JJ-Y65hFIrA\}\{Assista ao vídeo "Expressões do Primeiro Grau", que cobre parte do conteúdo desta página\}}
+    \end{center}
+    
+    \item \comop{geogebra}{argumentos opcionais}{imagem}: insere uma imagem do repositório de mídia, que pode ser acessado no botão "Mídia" da página de edição. Os argumentos opcionais devem ser na forma 
+    \begin{center}
+        \texttt{[Opção1=valor, ..., OpçãoN=valor]}
+    \end{center}
+    onde, cada OpçãoX pode corresponder a a um campo de estilo CSS ho html (exemplos: width [largura], height [altura]), ou a um parâmetro do GeoGebra, se inicado com "G_" (por exemplo, "G_width=300" passará o parâmetro width como 300 para o applet).
+\end{itemize}
+

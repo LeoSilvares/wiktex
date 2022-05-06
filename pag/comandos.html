@@ -1,0 +1,18 @@
+     <h1>Comandos suportados</h1>
+
+<h2>Formata&ccedil;&atilde;o</h2>
+
+<ul>
+ <li><p> <b>\textbf{texto}</b>: formata o texto entre chaves com <b>negrito</b>. </p></li><li><p> <b>\textit{texto}</b>: formata o texto entre chaves com <i>it&aacute;lico</i>. </p></li><li><p> <b>\emph{texto}</b>: formata o texto entre chaves com <em>&ecirc;nfase</em>. </p></li><li><p> <b>\underline{texto}</b>: formata o texto entre chaves com <u>sublinhado</u>. </p></li><li><p> <b>\texttt{texto}</b>: formata o texto entre chaves com <span style='font-family: monospace'>monoespa&ccedil;ado</span>. </p></li><li><p> <b>\hspace{espa&ccedil;o}</b>: insere um espa&ccedil;o horizontal. </p></li><li><p> <b>\vspace{espa&ccedil;o}</b>: insere um espa&ccedil;o vertical. </p></li><li><p> <b>\bigskip</b>: pula uma linha. </p></li>
+</ul><h2>Organiza&ccedil;&atilde;o do documento e navega&ccedil;&atilde;o</h2>
+
+<ul>
+ </li><li><p> <b>\section{Nome da se&ccedil;&atilde;o}</b>: cria uma nova se&ccedil;&atilde;o </p></li><li><p> <b>\subsection{Nome da subse&ccedil;&atilde;o}</b>: cria uma nova subse&ccedil;&atilde;o </p></li><li><p> <b>\label{r&oacute;tulo}</b>: insere um r&oacute;tulo para refer&ecirc;ncia. No c&oacute;digo abaixo, o comando <b>\label{pitagoras}</b> atribui o r&oacute;tulo <span style='font-family: monospace'>pitagoras</span> ao teorema. O comando <b>\ ref{pitagoras}</b> exibe o n&uacute;mero do teorema. </p><div class='div_verbatim'><pre>    &bsol;begin{theorem}&bsol;label{pitagoras}
+        Se $ABC$ &eacute; um tri&acirc;ngulo ret&acirc;ngulo com &acirc;ngulo reto $&bsol;hat{A}$, ent&atilde;o $&bsol;overline{BC}^2=&bsol;overline{AB}^2+&bsol;overline{AC}^2$.
+    &bsol;end{theorem}
+    
+    &bsol;[&bsol;vdots&bsol;]
+    
+    Pelo Teorema &bsol;ref{pitagoras}, temos que ...
+    </pre></div><p>A sa&iacute;da do c&oacute;digo acima &eacute;: </p><div class='theorem theorem'><div class='theorem_title theorem_title'>Teorema 1</div><p><span id='pitagoras'></span> Se $ABC$ &eacute; um tri&acirc;ngulo ret&acirc;ngulo com &acirc;ngulo reto $\hat{A}$, ent&atilde;o $\overline{BC}^2=\overline{AB}^2+\overline{AC}^2$. </p></div>\[\vdots\]<p>Pelo Teorema <a href='#pitagoras'>1</a>, temos que ...</p></li><li><p> <b>\ ref{r&oacute;tulo}</b>: insere um link para um r&oacute;tulo criado com <b>\label</b>, como explicado no comando <b>\label</b>.</p></li><li><p> <b>\href{url}{texto}</b>: insere um link para o endere&ccedil;o informado com o texto dado. </p></li>
+</ul>

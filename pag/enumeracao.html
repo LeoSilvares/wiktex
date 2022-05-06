@@ -1,0 +1,34 @@
+     <h1>Ambientes de enumera&ccedil;&atilde;o</h1>
+
+<ul>
+ <li><p> Enumera&ccedil;&atilde;o padr&atilde;o: o c&oacute;digo </p><div class='div_verbatim'><pre>        &bsol;begin{enumerate}
+            &bsol;item Item
+            &bsol;item Outro item
+        &bsol;end{enumerate}</pre></div> <p>produzir&aacute;: </p></li>
+</ul> <ol> <li><p> Item </p></li><li><p> Outro item </p></li>
+</ol><ul>
+ </li><li><p> Enumera&ccedil;&atilde;o com estilo: o c&oacute;digo </p><div class='div_verbatim'><pre>        &bsol;begin{enumerate}[(a)]
+            &bsol;item Item
+            &bsol;item Outro item
+        &bsol;end{enumerate}</pre></div> <p>produzir&aacute;: </p></li>
+</ul> <style>ol.custom1 > li::before{content:  "(" counter(li, lower-latin) ")" ;}</style><ol class='custom custom1'> </li><li> Item </p></li><li> Outro item </p></li>
+</ol> <p>Pode-se utilizar no estilo os caracteres '(', ')', '-', '.' e ':'. A numera&ccedil;&atilde;o pode ser com <b>1</b> (n&uacute;meros), <b>I</b> (romanos mai&uacute;sculos), <b>i</b> (romanos min&uacute;sculos), <b>a</b> (letras latinas min&uacute;sculas) ou <b>A</b> (letras latinas mai&uacute;sculas).</p><ul>
+ </li><li><p> Itemiza&ccedil;&atilde;o com estilo: o c&oacute;digo </p><div class='div_verbatim'><pre>        &bsol;begin{itemize}
+            &bsol;item Item
+            &bsol;item Outro item
+        &bsol;end{enumerate}</pre></div> <p>produzir&aacute;: </p></li>
+</ul> <p><div class='minipage ' style='width: 80px'><p>$\;$</p></div><div class='minipage ' style='width: 400px'> <ul>
+ </li><li><p> Item </p></li><li><p> Outro item </p></li>
+</ul> </div></p><ul>
+ </li><li><p> Itemiza&ccedil;&atilde;o com colunas: o c&oacute;digo </p><div class='div_verbatim'><pre>        &bsol;begin{itemize-cols}{200px}
+            &bsol;item Item 1
+            &bsol;item Item 2
+            &bsol;item Item 3
+            &bsol;item Item 4
+            &bsol;item Item 5
+            &bsol;item Item 6
+        &bsol;end{itemize-cols}
+    </pre></div> <p>produzir&aacute; uma lista em que os elementos podem ficar lado a lado, em caixas de 200px de largura, que se distribuir&atilde;o de acordo com a largura da p&aacute;gina: </p></li>
+</ul> <style>div.itemize-cols {display:inline-block;width:200px;}</style><ul>
+ <div class='itemize-cols'><li><p> Item 1 </p></li></div><div class='itemize-cols'><li><p> Item 2 </p></li></div><div class='itemize-cols'><li><p> Item 3 </p></li></div><div class='itemize-cols'><li><p> Item 4 </p></li></div><div class='itemize-cols'><li><p> Item 5 </p></li></div><div class='itemize-cols'><li><p> Item 6 </p></li></div>
+</ul><p>Redimensione a janela do navegador para ver o efeito.</p>

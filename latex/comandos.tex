@@ -1,0 +1,63 @@
+%meta-autor LeoSilvares
+%meta-versao 2
+%meta-data 10/Aug/2021 13:35:31
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\section{Comandos suportados}
+
+\subsection{Formatação}
+
+\begin{itemize}
+    \item \comp{textbf}{texto}: formata o texto entre chaves com \textbf{negrito}.
+    \item \comp{textit}{texto}: formata o texto entre chaves com \textit{itálico}.
+    \item \comp{emph}{texto}: formata o texto entre chaves com \emph{ênfase}.
+    \item \comp{underline}{texto}: formata o texto entre chaves com \underline{sublinhado}.
+    \item \comp{texttt}{texto}: formata o texto entre chaves com \texttt{monoespaçado}.
+    \item \comp{hspace}{espaço}: insere um espaço horizontal.
+    \item \comp{vspace}{espaço}: insere um espaço vertical.
+    \item \com{bigskip}: pula uma linha.
+\end{itemize}
+
+\subsection{Organização do documento e navegação}
+
+\begin{itemize}
+    \item \comp{section}{Nome da seção}: cria uma nova seção
+    \item \comp{subsection}{Nome da subseção}: cria uma nova subseção
+    \item \comp{label}{rótulo}: insere um rótulo para referência.
+    No código abaixo, o comando \comp{label}{pitagoras} atribui o rótulo \texttt{pitagoras} ao teorema. O comando \textbf{\backslash ref\{pitagoras\}} exibe o número do teorema.
+    \begin{verbatim}
+    \begin{theorem}\label{pitagoras}
+        Se $ABC$ é um triângulo retângulo com ângulo reto $\hat{A}$, então $\overline{BC}^2=\overline{AB}^2+\overline{AC}^2$.
+    \end{theorem}
+    
+    \[\vdots\]
+    
+    Pelo Teorema \ref{pitagoras}, temos que ...
+    \end{verbatim}
+    
+    A saída do código acima é:
+    \begin{theorem}\label{pitagoras}
+        Se $ABC$ é um triângulo retângulo com ângulo reto $\hat{A}$, então $\overline{BC}^2=\overline{AB}^2+\overline{AC}^2$.
+    \end{theorem}
+    
+    \[\vdots\]
+    
+    Pelo Teorema \ref{pitagoras}, temos que ...
+    
+    
+    \item \textbf{\backslash ref\{rótulo\}}: insere um link para um rótulo criado com \com{label}, como explicado no comando \com{label}.
+    
+    
+    \item \compp{href}{url}{texto}: insere um link para o endereço informado com o texto dado.
+\end{itemize}
+

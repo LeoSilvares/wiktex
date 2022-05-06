@@ -1,0 +1,86 @@
+%meta-autor LeoSilvares
+%meta-versao 2
+%meta-data 13/Aug/2021 18:17:43
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\section{Ambientes de enumeração}
+
+\begin{itemize}
+    \item Enumeração padrão: o código
+    \begin{verbatim}
+        \begin{enumerate}
+            \item Item
+            \item Outro item
+        \end{enumerate}\end{verbatim}
+    produzirá:
+\end{itemize}
+    \begin{enumerate}
+        \item Item
+        \item Outro item
+    \end{enumerate}
+
+\begin{itemize}
+    \item Enumeração com estilo: o código
+    \begin{verbatim}
+        \begin{enumerate}[(a)]
+            \item Item
+            \item Outro item
+        \end{enumerate}\end{verbatim}
+    produzirá:
+\end{itemize}
+    \begin{enumerate}[(a)]
+        \item Item
+        \item Outro item
+    \end{enumerate}
+    Pode-se utilizar no estilo os caracteres '(', ')', '-', '.' e ':'. A numeração pode ser com \textbf{1} (números), \textbf{I} (romanos maiúsculos), \textbf{i} (romanos minúsculos), \textbf{a} (letras latinas minúsculas) ou \textbf{A} (letras latinas maiúsculas).
+
+\begin{itemize}
+    \item Itemização com estilo: o código
+    \begin{verbatim}
+        \begin{itemize}
+            \item Item
+            \item Outro item
+        \end{enumerate}\end{verbatim}
+    produzirá:
+\end{itemize}
+    \begin{minipage}{80px}$\;$\end{minipage}\begin{minipage}{400px}
+    \begin{itemize}
+        \item Item
+        \item Outro item
+    \end{itemize}
+    \end{minipage}
+    
+\begin{itemize}
+    \item Itemização com colunas: o código
+    \begin{verbatim}
+        \begin{itemize-cols}{200px}
+            \item Item 1
+            \item Item 2
+            \item Item 3
+            \item Item 4
+            \item Item 5
+            \item Item 6
+        \end{itemize-cols}
+    \end{verbatim}
+    produzirá uma lista em que os elementos podem ficar lado a lado, em caixas de 200px de largura, que se distribuirão de acordo com a largura da página:
+\end{itemize}
+    \begin{itemize-cols}{200px}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+        \item Item 4
+        \item Item 5
+        \item Item 6
+    \end{itemize-cols}
+
+     Redimensione a janela do navegador para ver o efeito.

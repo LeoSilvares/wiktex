@@ -1,0 +1,62 @@
+%meta-autor LeoSilvares
+%meta-versao 4
+%meta-data 23/Aug/2021 12:00:54
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\subsection{Ambientes específicos}
+
+Os seguintes ambientes são suportados:
+
+\begin{itemize}
+    \item HTML: o código abaixo produzirá uma saída HTML exatamente como for escrita.
+        \begin{verbatim}
+            \begin{html}
+                <a href='google.com'><div style='display: inline-block; width:fit-content; border: 2px solid black;'>Google</div></a>
+            \end{html}\end{verbatim}
+        produzirá:
+        \begin{html}
+            <a href='google.com'><div style='display: inline-block; width:fit-content; border: 2px solid black;'>Google</div></a>
+        \end{html}
+    
+    \item Verbatim: o ambiente verbatim faz com que o texto em seu interior seja reproduzido identicamente na saída, sem qualquer interpretação LaTeX.
+    
+        \begin{verbatim}
+            \begin{‎verbatim}
+                \section{Funções reais}
+            \end{‎verbatim}\end{verbatim}
+        produzirá:
+        
+        \begin{verbatim}
+            \section{Funções reais}\end{verbatim}
+    
+    \item Comentários no código: tudo o que for escrito no ambiente comment será ignorado pelo interpretador:
+    
+    \begin{verbatim}
+        Isto será interpretado
+        \begin{comment}
+            Isto não será interpretado. x^2+1, \ref{ref}    
+        \end{comment}
+        Isto será.
+    \end{verbatim}
+        produzirá:
+        
+        Isto será interpretado
+        \begin{comment}
+            Isto não será interpretado, mesmo com erros x^2^2 ou comandos como \ref{ref}.    
+        \end{comment}
+        Isto será.
+    
+    
+\end{itemize}
+    
+		

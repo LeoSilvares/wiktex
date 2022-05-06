@@ -1,0 +1,50 @@
+%meta-autor LeoSilvares
+%meta-versao 1
+%meta-data 02/Aug/2021 13:11:04
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\section{Ambientes de layout}
+
+\begin{itemize}
+    \item Minipágina: o código
+    \begin{verbatim}
+        \begin{minipage}{300}
+            Exemplo de minipágina.
+            \begin{theorem}
+                Teorema em minipágina
+            \end{theorem}
+        \end{minipage}
+        \hspace{50}
+        \begin{minipage}{400}
+            Outro exemplo de minipágina.
+            \begin{example}
+                Exemplo em minipágina
+            \end{example}
+        \end{minipage}\end{verbatim}
+    produzirá duas minipáginas lado a lado, com larguras 300 e 400 pixels, respectivamente:
+    \begin{minipage}{300}
+        Exemplo de minipágina.
+        \begin{theorem}
+            Teorema em minipágina
+        \end{theorem}
+    \end{minipage}
+    \hspace{50}
+    \begin{minipage}{400}
+        Outro exemplo de minipágina.
+        \begin{example}
+            Exemplo em minipágina
+        \end{example}
+    \end{minipage}
+
+    Repare que o \comp{hspace}{50} produz um espaçamento de 50 pixels entre as minipáginas.
+\end{itemize}

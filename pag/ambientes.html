@@ -1,0 +1,14 @@
+ <p>	    </p><h2>Ambientes espec&iacute;ficos</h2>
+
+<p>Os seguintes ambientes s&atilde;o suportados:</p><ul>
+ <li><p> HTML: o c&oacute;digo abaixo produzir&aacute; uma sa&iacute;da HTML exatamente como for escrita. </p><div class='div_verbatim'><pre>            &bsol;begin{html}
+                &lt;a href='google.com'&gt;&lt;div style='display: inline-block; width:fit-content; border: 2px solid black;'&gt;Google&lt;/div&gt;&lt;/a&gt;
+            &bsol;end{html}</pre></div> <p>produzir&aacute;: </p> <p><a href='google.com'><div style='display: inline-block; width:fit-content; border: 2px solid black;'>Google</div></a> </p></li><li><p> Verbatim: o ambiente verbatim faz com que o texto em seu interior seja reproduzido identicamente na sa&iacute;da, sem qualquer interpreta&ccedil;&atilde;o LaTeX.</p><div class='div_verbatim'><pre>            &bsol;begin{&lrm;verbatim}
+                &bsol;section{Fun&ccedil;&otilde;es reais}
+            &bsol;end{&lrm;verbatim}</pre></div> <p>produzir&aacute;:</p><div class='div_verbatim'><pre>            &bsol;section{Fun&ccedil;&otilde;es reais}</pre></div></li><li><p> Coment&aacute;rios no c&oacute;digo: tudo o que for escrito no ambiente comment ser&aacute; ignorado pelo interpretador:</p><div class='div_verbatim'><pre>        Isto ser&aacute; interpretado
+        &bsol;begin{comment}
+            Isto n&atilde;o ser&aacute; interpretado. x^2+1, &bsol;ref{ref}    
+        &bsol;end{comment}
+        Isto ser&aacute;.
+    </pre></div> <p>produzir&aacute;:</p><p>Isto ser&aacute; interpretado </p> <p>Isto ser&aacute;.</p></li>
+</ul><p>		</p>

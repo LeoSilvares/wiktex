@@ -1,0 +1,1 @@
+<?php $fora_de_uso = array();?>

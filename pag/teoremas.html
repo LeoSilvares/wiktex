@@ -1,0 +1,20 @@
+ <p>	    </p><h2>Ambientes de teoremas e defini&ccedil;&otilde;es</h2>
+
+<p>Os seguintes ambientes s&atilde;o suportados:</p><ul>
+ <li><p> Defini&ccedil;&atilde;o: o c&oacute;digo </p><div class='div_verbatim'><pre>            &bsol;begin{definition}
+                Isto &eacute; uma defini&ccedil;&atilde;o.
+            &bsol;end{definition}</pre></div> <p>produzir&aacute;: </p><div class='theorem definition'><div class='theorem_title definition_title'>Definição 1</div> <p>Isto &eacute; uma defini&ccedil;&atilde;o. </p></div></li><li><p> Teorema: o c&oacute;digo </p><div class='div_verbatim'><pre>            &bsol;begin{theorem}
+                Isto &eacute; um teorema.
+            &bsol;end{theorem}</pre></div> <p>produzir&aacute;: </p><div class='theorem theorem'><div class='theorem_title theorem_title'>Teorema 1</div> <p>Isto &eacute; um teorema. </p></div></li><li><p> Proposi&ccedil;&atilde;o: o c&oacute;digo </p><div class='div_verbatim'><pre>            &bsol;begin{proposition}
+                Isto &eacute; uma proposi&ccedil;&atilde;o.
+            &bsol;end{proposition}</pre></div> <p>produzir&aacute;: </p><div class='theorem proposition'><div class='theorem_title proposition_title'>Proposição 1</div> <p>Isto &eacute; uma proposi&ccedil;&atilde;o. </p></div></li><li><p> Exemplo: o c&oacute;digo </p><div class='div_verbatim'><pre>            &bsol;begin{example}
+                Isto &eacute; uma defini&ccedil;&atilde;o.
+            &bsol;end{example}</pre></div> <p>produzir&aacute;: </p><div class='theorem example'><div class='theorem_title example_title'>Exemplo 1</div> <p>Isto &eacute; um exemplo. </p></div></li><li><p> Solu&ccedil;&atilde;o: produz uma &aacute;rea com solu&ccedil;&atilde;o de exemplos, que pode ser expandida. &Eacute; especialmente &uacute;til dentro de exemplos, como abaixo: </p><div class='div_verbatim'><pre>            &bsol;begin{example}
+                Isto &eacute; um exemplo.
+                &bsol;begin{solution}
+                    Isto &eacute; uma solu&ccedil;&atilde;o.
+                &bsol;end{solution}
+            &bsol;end{example}</pre></div> <p>produzir&aacute;: </p><div class='theorem example'><div class='theorem_title example_title'>Exemplo 2</div> <p>Isto &eacute; um exemplo. </p><div class='theorem theorem_exp_hidden solution' id='solution_exp_1'><div class='theorem_title solution_title'  onclick='document.getElementById("solution_exp_1").classList.toggle("theorem_exp_hidden");document.getElementById("button_solution_exp_1").classList.toggle("btn_exp_hidden");'>Solução <div class='btn_exp btn_exp_hidden' id='button_solution_exp_1'></div></div> <p>Isto &eacute; uma solu&ccedil;&atilde;o. </p></div> </div></li><li><p> Demonstra&ccedil;&atilde;o: produz uma &aacute;rea para demonstra&ccedil;&atilde;o que pode ser expandida. </p><div class='div_verbatim'><pre>            &bsol;begin{proof}
+                Tome $x=...$
+            &bsol;end{proof}</pre></div> <p>produzir&aacute;: </p><div class='theorem theorem_exp_hidden proof' id='proof_exp_1'><div class='theorem_title proof_title'  onclick='document.getElementById("proof_exp_1").classList.toggle("theorem_exp_hidden");document.getElementById("button_proof_exp_1").classList.toggle("btn_exp_hidden");'>Demonstração <div class='btn_exp btn_exp_hidden' id='button_proof_exp_1'></div></div> <p>Tome $x=...$ </p></div></li>
+</ul><p>	</p>

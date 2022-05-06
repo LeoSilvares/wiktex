@@ -1,0 +1,89 @@
+%meta-autor LeoSilvares
+%meta-versao 3
+%meta-data 25/Oct/2021 20:41:32
+%conteudo
+
+%meta-autor LeoSilvares
+%meta-versao 0
+%meta-data 02/Ago/2021 10:00:00
+%conteudo
+
+\newcommand{\com}[1]{\textbf{\backslash#1}}
+\newcommand{\comp}[2]{\textbf{\backslash#1\{#2\}}}
+\newcommand{\compp}[3]{\textbf{\backslash#1\{#2\}\{#3\}}}
+\newcommand{\comop}[3]{\textbf{\backslash#1[#2]\{#3\}}}
+
+\subsection{Ambientes de teoremas e definições}
+
+Os seguintes ambientes são suportados:
+
+\begin{itemize}
+    \item Definição: o código
+        \begin{verbatim}
+            \begin{definition}
+                Isto é uma definição.
+            \end{definition}\end{verbatim}
+        produzirá:
+        \begin{definition}
+            Isto é uma definição.
+        \end{definition}
+        
+    \item Teorema: o código
+        \begin{verbatim}
+            \begin{theorem}
+                Isto é um teorema.
+            \end{theorem}\end{verbatim}
+        produzirá:
+        \begin{theorem}
+            Isto é um teorema.
+        \end{theorem}
+        
+    \item Proposição: o código
+        \begin{verbatim}
+            \begin{proposition}
+                Isto é uma proposição.
+            \end{proposition}\end{verbatim}
+        produzirá:
+        \begin{proposition}
+            Isto é uma proposição.
+        \end{proposition}
+        
+    \item Exemplo: o código
+        \begin{verbatim}
+            \begin{example}
+                Isto é uma definição.
+            \end{example}\end{verbatim}
+        produzirá:
+        \begin{example}
+            Isto é um exemplo.
+        \end{example}
+        
+    \item Solução: produz uma área com solução de exemplos, que pode ser expandida. É especialmente útil dentro de exemplos, como abaixo:
+        \begin{verbatim}
+            \begin{example}
+                Isto é um exemplo.
+                \begin{solution}
+                    Isto é uma solução.
+                \end{solution}
+            \end{example}\end{verbatim}
+        produzirá:
+        \begin{example}
+            Isto é um exemplo.
+            \begin{solution}
+                Isto é uma solução.
+            \end{solution}
+        \end{example}
+    
+    \item Demonstração: produz uma área para demonstração que pode ser expandida.
+        \begin{verbatim}
+            \begin{proof}
+                Tome $x=...$
+            \end{proof}\end{verbatim}
+        produzirá:
+            \begin{proof}
+                Tome $x=...$
+            \end{proof}
+        
+\end{itemize}
+    
+	

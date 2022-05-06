@@ -1,0 +1,1 @@
+<?php $proxima_pagina_livre = 1; ?>
