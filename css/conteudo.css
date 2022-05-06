@@ -81,6 +81,11 @@ li
     background-repeat: no-repeat;
 	padding-left: 70px;
 }
+.div_scratch
+{
+	background-color: #ffffff;
+	border: 1px solid #0f0f0f;
+}
 .minipage
 {
 	display: inline-block;
@@ -184,9 +189,26 @@ div.example
 {
 	background-color: #eeeeee;/*rgb(233,227,222);*/
 }
+div.example_title
+{
+	font-weight: bold;
+}
+div.exercise
+{
+	background-color: #eeeeee;/*rgb(233,227,222);*/
+}
+div.exercise_title
+{
+	font-weight: bold;
+}
 div.solution
 {
 	background-color: #ffffff;
+}
+div.proof
+{
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
 }
 div.theorem_exp_hidden
 {

@@ -185,6 +185,13 @@ body{
 	color: rgb(192,188,184);
 }
 
+#div_login > a.poweredby
+{
+	margin-left: 8px;
+	text-decoration: none;
+	color: black;
+}
+
 .float_round_button_nav
 {
 	width: 32px;
